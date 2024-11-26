@@ -14,11 +14,11 @@ import {
 
 import styles from './ArticleParamsForm.module.scss';
 import clsx from 'clsx';
-import { useOutsideClickClose } from 'src/ui/select/hooks/useOutsideClickClose';
 import { Text } from '../../ui/text/Text';
 import { Select } from 'src/ui/select/Select';
 import { RadioGroup } from 'src/ui/radio-group';
 import { Separator } from 'src/ui/separator';
+import { useClose } from 'src/hooks/useClose';
 
 type ArticleParamsFormProps = {
 	currentArticleState: ArticleStateType;
@@ -38,11 +38,10 @@ export const ArticleParamsForm = ({
 		setSelectArticleState({ ...selectArticleState, [key]: value });
 	};
 
-	useOutsideClickClose({
+	useClose({
 		isOpen: isMenuOpen,
-		rootRef,
 		onClose: () => setIsMenuOpen(false),
-		onChange: setIsMenuOpen,
+		rootRef,
 	});
 
 	return (
