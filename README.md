@@ -39,3 +39,17 @@
 2. Склонируйте данный репозиторий: `git clone https://github.com/MilanaMur/blog-customizer.git`
 3. Установите зависимости: `npm install`
 4. Запустите проект: `npm run start`
+
+## Требования к запуску
+
+- **Node.js**: >=18.0.0 **(рекомендуется LTS-версия)**
+- **npm**: >=9.0.0
+
+### Основные зависимости
+
+- **React**: ^18.2.0
+- **TypeScript**: ^5.0.4
+- **Webpack**: ^5.81.0
+- **Storybook**: ^8.0.5
+- **SCSS (Sass)**: ^1.69.7
+- **ESLint / Prettier / Stylelint**: для линтинга и форматирования кода
